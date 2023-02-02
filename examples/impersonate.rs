@@ -5,7 +5,7 @@ use std::io::{stdout, Write};
 fn main() {
     let mut easy = Easy::new();
 
-    curl_impersonate::impersonate(easy.raw(), "chrome99_android", true);
+    curl_impersonate::impersonate(easy.raw(), "chrome99_android", true).unwrap();
 
     easy.url("http://httpbin.org/get").unwrap();
     easy.write_function(|data| {
