@@ -1,0 +1,13 @@
+[package]
+name = "curl-impersonate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+curl = "0.4.44"
+curl-sys = "0.4.59"
+
+[[example]]
+name = "impersonate"
+path = "examples/impersonate.rs"
